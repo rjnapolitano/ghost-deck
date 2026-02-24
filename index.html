@@ -27,6 +27,9 @@
         html { scroll-snap-type: y mandatory; scroll-behavior: smooth; }
         .slide { scroll-snap-align: start; scroll-snap-stop: always; }
         .stat-number { font-feature-settings: 'tnum' 1; letter-spacing: -0.04em; }
+        @media (max-width: 768px) {
+            .slide { min-height: 100dvh; }
+        }
     </style>
 </head>
 <body class="bg-cream text-zinc-900 font-sans antialiased">
@@ -107,19 +110,19 @@
                         <p class="text-accent font-semibold">The demand is shifting</p>
                     </div>
 
-                    <div class="flex items-baseline gap-4 mb-8">
-                        <span class="text-5xl md:text-6xl font-light text-accent stat-number">83%</span>
-                        <p class="text-zinc-500">of brands prefer smaller niche<br>creators agencies can't serve</p>
+                    <div class="flex items-baseline gap-3 md:gap-4 mb-6 md:mb-8">
+                        <span class="text-4xl md:text-6xl font-light text-accent stat-number">83%</span>
+                        <p class="text-zinc-500 text-sm md:text-base">of brands prefer smaller niche creators agencies can't serve</p>
                     </div>
 
-                    <div class="flex items-baseline gap-4 mb-8">
-                        <span class="text-5xl md:text-6xl font-light text-accent stat-number">2-3x</span>
-                        <p class="text-zinc-500">better ROI than<br>macro-influencers</p>
+                    <div class="flex items-baseline gap-3 md:gap-4 mb-6 md:mb-8">
+                        <span class="text-4xl md:text-6xl font-light text-accent stat-number">2-3x</span>
+                        <p class="text-zinc-500 text-sm md:text-base">better ROI than macro-influencers</p>
                     </div>
 
-                    <div class="flex items-baseline gap-4">
-                        <span class="text-5xl md:text-6xl font-light text-accent stat-number">4x</span>
-                        <p class="text-zinc-500">higher engagement from<br>micro-creators</p>
+                    <div class="flex items-baseline gap-3 md:gap-4">
+                        <span class="text-4xl md:text-6xl font-light text-accent stat-number">4x</span>
+                        <p class="text-zinc-500 text-sm md:text-base">higher engagement from micro-creators</p>
                     </div>
                 </div>
 
@@ -130,16 +133,16 @@
                         <p class="text-accent font-semibold">But they have no representation</p>
                     </div>
 
-                    <div class="flex items-baseline gap-4">
-                        <span class="text-5xl md:text-6xl font-light text-accent stat-number">99%</span>
-                        <p class="text-zinc-500">of creators can't get<br>an agent</p>
+                    <div class="flex items-baseline gap-3 md:gap-4">
+                        <span class="text-4xl md:text-6xl font-light text-accent stat-number">99%</span>
+                        <p class="text-zinc-500 text-sm md:text-base">of creators can't get an agent</p>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="mt-auto">
-            <p class="text-accent font-semibold text-2xl md:text-3xl">Agencies like CAA ($10bn) and WME ($25bn) cannot economically service smaller creators.</p>
+            <p class="text-accent font-semibold text-lg md:text-2xl lg:text-3xl">Agencies like CAA ($10bn) and WME ($25bn) cannot economically service smaller creators.</p>
         </div>
     </section>
 
@@ -446,24 +449,24 @@
         <!-- Concentric circles positioned bottom-right -->
         <div class="flex-1 relative">
             <!-- TAM - Largest circle -->
-            <div class="absolute -bottom-32 -right-32 w-[700px] h-[700px] bg-accent rounded-full flex items-start justify-start pt-24 pl-24">
+            <div class="absolute -bottom-16 -right-16 md:-bottom-32 md:-right-32 w-[350px] h-[350px] md:w-[700px] md:h-[700px] bg-accent rounded-full flex items-start justify-start pt-12 pl-12 md:pt-24 md:pl-24">
                 <div>
-                    <span class="text-5xl md:text-6xl font-bold text-white/90 stat-number">$480B</span>
-                    <p class="text-white/60 text-sm mt-1">Creator Economy (2027)</p>
+                    <span class="text-3xl md:text-6xl font-bold text-white/90 stat-number">$480B</span>
+                    <p class="text-white/60 text-xs md:text-sm mt-1">Creator Economy (2027)</p>
                 </div>
 
                 <!-- SAM - Medium circle -->
-                <div class="absolute bottom-0 right-0 w-[450px] h-[450px] bg-accent rounded-full border-2 border-white/20 flex items-start justify-start pt-20 pl-16">
+                <div class="absolute bottom-0 right-0 w-[225px] h-[225px] md:w-[450px] md:h-[450px] bg-accent rounded-full border-2 border-white/20 flex items-start justify-start pt-10 pl-8 md:pt-20 md:pl-16">
                     <div>
-                        <span class="text-4xl md:text-5xl font-bold text-white/90 stat-number">$22B</span>
-                        <p class="text-white/60 text-sm mt-1">Influencer Marketing</p>
+                        <span class="text-2xl md:text-5xl font-bold text-white/90 stat-number">$22B</span>
+                        <p class="text-white/60 text-xs md:text-sm mt-1">Influencer Marketing</p>
                     </div>
 
                     <!-- SOM - Smallest circle -->
-                    <div class="absolute bottom-0 right-0 w-[220px] h-[220px] bg-cream rounded-full border-2 border-accent/30 flex items-center justify-center">
-                        <div class="text-center pr-4 pb-4">
-                            <span class="text-3xl md:text-4xl font-bold text-accent stat-number">$7B</span>
-                            <p class="text-zinc-500 text-sm mt-1">Creator Platforms</p>
+                    <div class="absolute bottom-0 right-0 w-[110px] h-[110px] md:w-[220px] md:h-[220px] bg-cream rounded-full border-2 border-accent/30 flex items-center justify-center">
+                        <div class="text-center pr-2 pb-2 md:pr-4 md:pb-4">
+                            <span class="text-xl md:text-4xl font-bold text-accent stat-number">$7B</span>
+                            <p class="text-zinc-500 text-xs md:text-sm mt-1">Creator Platforms</p>
                         </div>
                     </div>
                 </div>
@@ -481,29 +484,26 @@
         <p class="text-zinc-500 mb-8">$33B flows through influencer marketing annually. Here's where it goes:</p>
 
         <div class="flex-1 flex items-center justify-center">
-            <div class="flex items-end justify-center gap-16">
+            <div class="flex flex-col md:flex-row items-center md:items-end justify-center gap-8 md:gap-16">
                 <!-- Marketplaces: Small -->
-                <div class="text-center">
-                    <div class="bg-accent/10 border-2 border-accent/30 rounded-2xl p-8 mb-4" style="width: 200px; height: 160px;">
-                        <p class="text-accent text-sm uppercase tracking-wide mb-2">Marketplaces</p>
-                        <div class="text-4xl md:text-5xl font-bold text-accent stat-number">~$1B</div>
+                <div class="text-center order-2 md:order-1">
+                    <div class="bg-accent/10 border-2 border-accent/30 rounded-2xl p-6 md:p-8 mb-4 w-40 h-32 md:w-[200px] md:h-[160px] flex flex-col items-center justify-center">
+                        <p class="text-accent text-xs md:text-sm uppercase tracking-wide mb-2">Marketplaces</p>
+                        <div class="text-3xl md:text-5xl font-bold text-accent stat-number">~$1B</div>
                     </div>
-                    <div class="space-y-1 text-sm text-zinc-500">
-                        <p>TRIBE <span class="text-zinc-400">~$100M GMV</span></p>
-                        <p>Insense <span class="text-zinc-400">~$35M GMV</span></p>
-                        <p>Collabstr, Billo, others</p>
+                    <div class="space-y-1 text-xs md:text-sm text-zinc-500">
+                        <p>TRIBE, Insense, Collabstr</p>
                     </div>
                 </div>
 
                 <!-- Agencies: BIG -->
-                <div class="text-center">
-                    <div class="bg-zinc-900 rounded-2xl p-10 mb-4 flex flex-col items-center justify-center" style="width: 320px; height: 380px;">
-                        <p class="text-zinc-400 text-sm uppercase tracking-wide mb-4">Agencies</p>
-                        <div class="text-6xl md:text-7xl font-bold text-white stat-number">$13B</div>
+                <div class="text-center order-1 md:order-2">
+                    <div class="bg-zinc-900 rounded-2xl p-8 md:p-10 mb-4 flex flex-col items-center justify-center w-56 h-48 md:w-[320px] md:h-[380px]">
+                        <p class="text-zinc-400 text-xs md:text-sm uppercase tracking-wide mb-2 md:mb-4">Agencies</p>
+                        <div class="text-5xl md:text-7xl font-bold text-white stat-number">$13B</div>
                     </div>
-                    <div class="space-y-1 text-sm text-zinc-500">
+                    <div class="space-y-1 text-xs md:text-sm text-zinc-500">
                         <p>CAA, UTA, WME</p>
-                        <p>Viral Nation, Whalar</p>
                     </div>
                 </div>
             </div>
@@ -597,57 +597,49 @@
                     Growth Marketing, Talent Agent, and AI Experience.
                 </p>
 
-                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 overflow-y-auto max-h-[60vh] md:max-h-none md:overflow-visible">
                     <!-- R.J. Napolitano -->
-                    <div>
-                        <div class="w-20 h-20 bg-accent rounded-full flex items-center justify-center text-white text-xl font-bold mb-4">RJ</div>
-                        <h3 class="text-xl font-bold">R.J. Napolitano</h3>
-                        <p class="text-zinc-400 text-sm tracking-widest mb-4">CEO</p>
-                        <ul class="text-zinc-600 text-sm space-y-2">
-                            <li>Prior founder with over $2M ARR & $15M+ raised</li>
-                            <li>Talent agent for @anna_diblosi doing deals with CVS, P&G, & more</li>
-                            <li>Head of Growth at Sequoia backed Series A startup, grew new product line from $0-100M+ GMV</li>
-                            <li>Ultra marathon runner</li>
-                        </ul>
-                        <div class="flex items-center gap-3 mt-4 text-xs text-zinc-400">
-                            <span>Goldman Sachs</span>
-                            <span>Open</span>
-                            <span>Zebra</span>
+                    <div class="flex md:block gap-4">
+                        <div class="w-16 h-16 md:w-20 md:h-20 bg-accent rounded-full flex items-center justify-center text-white text-lg md:text-xl font-bold mb-0 md:mb-4 flex-shrink-0">RJ</div>
+                        <div>
+                            <h3 class="text-lg md:text-xl font-bold">R.J. Napolitano</h3>
+                            <p class="text-zinc-400 text-xs md:text-sm tracking-widest mb-2 md:mb-4">CEO</p>
+                            <ul class="text-zinc-600 text-xs md:text-sm space-y-1 md:space-y-2 hidden md:block">
+                                <li>Prior founder with over $2M ARR & $15M+ raised</li>
+                                <li>Talent agent for @anna_diblosi doing deals with CVS, P&G, & more</li>
+                                <li>Head of Growth at Sequoia backed Series A startup</li>
+                            </ul>
+                            <p class="text-zinc-500 text-xs md:hidden">Goldman Sachs · Prior $15M raised · Sequoia</p>
                         </div>
                     </div>
 
                     <!-- Gui Conti -->
-                    <div>
-                        <div class="w-20 h-20 bg-accent rounded-full flex items-center justify-center text-white text-xl font-bold mb-4">G</div>
-                        <h3 class="text-xl font-bold">Gui Conti</h3>
-                        <p class="text-zinc-400 text-sm tracking-widest mb-4">CTO</p>
-                        <ul class="text-zinc-600 text-sm space-y-2">
-                            <li>Masters in Artificial Intelligence from the #1 university in Brazil</li>
-                            <li>Staff Engineer at Experian ($42B company)</li>
-                            <li>Director of Engineering at Fellow.ai from seed to $10M+ ARR (Raised $30M, Craft Ventures backed)</li>
-                            <li>High ranking of 67 out of 15,000,000 in World of Warcraft</li>
-                        </ul>
-                        <div class="flex items-center gap-3 mt-4 text-xs text-zinc-400">
-                            <span>Fellow</span>
-                            <span>Itau</span>
-                            <span>Experian</span>
+                    <div class="flex md:block gap-4">
+                        <div class="w-16 h-16 md:w-20 md:h-20 bg-accent rounded-full flex items-center justify-center text-white text-lg md:text-xl font-bold mb-0 md:mb-4 flex-shrink-0">G</div>
+                        <div>
+                            <h3 class="text-lg md:text-xl font-bold">Gui Conti</h3>
+                            <p class="text-zinc-400 text-xs md:text-sm tracking-widest mb-2 md:mb-4">CTO</p>
+                            <ul class="text-zinc-600 text-xs md:text-sm space-y-1 md:space-y-2 hidden md:block">
+                                <li>Masters in AI from #1 university in Brazil</li>
+                                <li>Staff Engineer at Experian ($42B company)</li>
+                                <li>Dir of Eng at Fellow.ai, seed to $10M+ ARR</li>
+                            </ul>
+                            <p class="text-zinc-500 text-xs md:hidden">Masters AI · Experian · Fellow.ai $10M ARR</p>
                         </div>
                     </div>
 
                     <!-- Dilawer Hussain -->
-                    <div>
-                        <div class="w-20 h-20 bg-accent rounded-full flex items-center justify-center text-white text-xl font-bold mb-4">D</div>
-                        <h3 class="text-xl font-bold">Dilawer Hussain</h3>
-                        <p class="text-zinc-400 text-sm tracking-widest mb-4">CPO</p>
-                        <ul class="text-zinc-600 text-sm space-y-2">
-                            <li>Fellow.ai engineer from seed to Series A (Craft Ventures backed)</li>
-                            <li>Owned enterprise AI integrations for HubSpot & Salesforce</li>
-                            <li>Solo-built and shipped React Native fitness apps for fun</li>
-                            <li>Mentored by a design leader at Linear</li>
-                            <li>Powerlifter & bodybuilder in his free time</li>
-                        </ul>
-                        <div class="flex items-center gap-3 mt-4 text-xs text-zinc-400">
-                            <span>Fellow</span>
+                    <div class="flex md:block gap-4">
+                        <div class="w-16 h-16 md:w-20 md:h-20 bg-accent rounded-full flex items-center justify-center text-white text-lg md:text-xl font-bold mb-0 md:mb-4 flex-shrink-0">D</div>
+                        <div>
+                            <h3 class="text-lg md:text-xl font-bold">Dilawer Hussain</h3>
+                            <p class="text-zinc-400 text-xs md:text-sm tracking-widest mb-2 md:mb-4">CPO</p>
+                            <ul class="text-zinc-600 text-xs md:text-sm space-y-1 md:space-y-2 hidden md:block">
+                                <li>Fellow.ai engineer from seed to Series A</li>
+                                <li>Owned enterprise AI integrations for HubSpot & Salesforce</li>
+                                <li>Mentored by a design leader at Linear</li>
+                            </ul>
+                            <p class="text-zinc-500 text-xs md:hidden">Fellow.ai · HubSpot/Salesforce AI · Linear</p>
                         </div>
                     </div>
                 </div>
@@ -661,26 +653,26 @@
             <img src="logo.png" alt="Ghost" style="height: 32px; width: auto;" class="object-contain self-start">
         </div>
 
-        <div class="flex-1 flex">
+        <div class="flex-1 flex flex-col md:flex-row">
             <div class="w-full md:w-1/2 p-8 md:p-12 lg:p-16 flex flex-col justify-center">
                 <p class="text-zinc-400 text-sm uppercase tracking-widest mb-2">Raising</p>
-                <div class="text-6xl md:text-7xl font-bold text-accent stat-number mb-6">$1.5M</div>
-                <div class="space-y-2 text-zinc-600 mb-10">
+                <div class="text-5xl md:text-7xl font-bold text-accent stat-number mb-4 md:mb-6">$1.5M</div>
+                <div class="space-y-2 text-zinc-600 text-sm md:text-base mb-6 md:mb-10">
                     <p>→ Negotiation & close infrastructure</p>
                     <p>→ Scale roster to 50K creators</p>
                     <p>→ Capture brand demand now</p>
                 </div>
-                <div class="pt-6 border-t border-zinc-200">
+                <div class="pt-4 md:pt-6 border-t border-zinc-200">
                     <p class="font-semibold text-lg">R.J. Napolitano</p>
                     <p class="text-accent">CEO</p>
                 </div>
             </div>
-            <div class="hidden md:flex w-1/2 bg-accent items-center justify-center p-16">
+            <div class="w-full md:w-1/2 bg-accent flex items-center justify-center p-8 md:p-16">
                 <div class="text-center text-white">
-                    <h3 class="text-4xl font-bold mb-8">Get in touch<br>to meet Ghost.</h3>
-                    <div class="space-y-2">
-                        <p class="text-xl">rj@onghost.com</p>
-                        <p class="text-white/70">(267) 664-6640</p>
+                    <h3 class="text-2xl md:text-4xl font-bold mb-4 md:mb-8">Get in touch<br>to meet Ghost.</h3>
+                    <div class="space-y-1 md:space-y-2">
+                        <p class="text-lg md:text-xl">rj@onghost.com</p>
+                        <p class="text-white/70 text-sm md:text-base">(267) 664-6640</p>
                     </div>
                 </div>
             </div>
