@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FAF9F6',
+                        accent: '#635bff',
+                    },
+                    fontFamily: {
+                        sans: ['Sora', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-snap-type: y mandatory; scroll-behavior: smooth; }
+        .slide { scroll-snap-align: start; scroll-snap-stop: always; }
+        .stat-number { font-feature-settings: 'tnum' 1; letter-spacing: -0.04em; }
+    </style>
+</head>
+<body class="bg-cream text-zinc-900 font-sans antialiased">
+
+    <!-- SLIDE 1: Hero -->
+    <section class="slide min-h-screen flex flex-col p-8 md:p-12 lg:p-16">
+        <div class="flex-1 flex items-center">
+            <div class="grid md:grid-cols-2 gap-12 items-center w-full">
+                <div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05]">
+                        Creating 1 billion creator-brand partnerships.
+                    </h1>
+                </div>
+                <div class="grid grid-cols-3 gap-3">
+                    <img src="creator1.jpg" alt="Creator" class="aspect-square object-cover rounded-lg">
+                    <img src="creator2.jpg" alt="Creator" class="aspect-square object-cover rounded-lg">
+                    <img src="creator3.jpg" alt="Creator" class="aspect-square object-cover rounded-lg">
+                    <div class="aspect-square bg-zinc-100 rounded-lg flex items-center justify-center p-4">
+                        <img src="logos/perplexity.jpg" alt="Perplexity" class="max-h-full max-w-full object-contain">
+                    </div>
+                    <div class="aspect-square bg-zinc-100 rounded-lg flex items-center justify-center p-4">
+                        <img src="logos/lovable.png" alt="Lovable" class="max-h-full max-w-full object-contain">
+                    </div>
+                    <div class="aspect-square bg-zinc-100 rounded-lg flex items-center justify-center p-4">
+                        <img src="logos/esteelauder.png" alt="Estée Lauder" class="max-h-full max-w-full object-contain">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="logo.png" alt="Ghost" style="height: 32px; width: auto;" class="object-contain self-start">
+    </section>
+
+    <!-- SLIDE 2: Mission -->
+    <section class="slide min-h-screen flex flex-col p-8 md:p-12 lg:p-16">
+        <img src="logo.png" alt="Ghost" style="height: 32px; width: auto;" class="object-contain mb-auto self-start">
+
+        <div class="flex-1 flex items-center">
+            <div class="grid md:grid-cols-2 gap-16 items-center w-full">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight leading-tight mb-6">
+                        Ghost's mission is to empower every creator on earth to build meaningful partnerships with brands.
+                    </h2>
+                    <p class="text-zinc-500 text-lg">
+                        Connecting them with brands that align with their content and values. Ghost aims to redefine how creators and brands are united.
+                    </p>
+                </div>
+                <div class="flex justify-end">
+                    <div class="grid grid-cols-3 gap-4">
+                        <div class="w-12 h-12 bg-accent rounded-lg"></div>
+                        <div class="w-12 h-12 bg-accent rounded-full"></div>
+                        <div class="w-12 h-12 bg-accent/60 rounded-lg rotate-45"></div>
+                        <div class="w-12 h-12 bg-accent/40 rounded-full"></div>
+                        <div class="w-12 h-12 bg-accent rounded-lg"></div>
+                        <div class="w-12 h-12 bg-accent/80 rounded-full"></div>
+                        <div class="w-12 h-12 bg-accent/60 rounded-lg"></div>
+                        <div class="w-12 h-12 bg-accent/40 rounded-lg rotate-45"></div>
+                        <div class="w-12 h-12 bg-accent rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 3: Problem Stats -->
+    <section class="slide min-h-screen flex flex-col p-8 md:p-12 lg:p-16">
+        <img src="logo.png" alt="Ghost" style="height: 32px; width: auto;" class="object-contain self-start">
+
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mt-8 mb-16">
+            50 million professional creators<br>are without representation.
+        </h2>
+
+        <div class="flex-1">
+            <div class="grid md:grid-cols-2 gap-x-24 gap-y-4">
+                <!-- Left Column -->
+                <div>
+                    <div class="flex items-center gap-2 mb-8">
+                        <span class="text-accent text-2xl">📈</span>
+                        <p class="text-accent font-semibold">The demand is shifting</p>
+                    </div>
+
+                    <div class="flex items-baseline gap-4 mb-8">
+                        <span class="text-5xl md:text-6xl font-light text-accent stat-number">83%</span>
+                        <p class="text-zinc-500">of brands prefer smaller niche<br>creators agencies can't serve</p>
+                    </div>
+
+                    <div class="flex items-baseline gap-4 mb-8">
+                        <span class="text-5xl md:text-6xl font-light text-accent stat-number">2-3x</span>
+                        <p class="text-zinc-500">better ROI than<br>macro-influencers</p>
+                    </div>
+
+                    <div class="flex items-baseline gap-4">
+                        <span class="text-5xl md:text-6xl font-light text-accent stat-number">4x</span>
+                        <p class="text-zinc-500">higher engagement from<br>micro-creators</p>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div>
+                    <div class="flex items-center gap-2 mb-8">
+                        <span class="text-accent text-2xl">💔</span>
+                        <p class="text-accent font-semibold">But they have no representation</p>
+                    </div>
+
+                    <div class="flex items-baseline gap-4">
+                        <span class="text-5xl md:text-6xl font-light text-accent stat-number">99%</span>
+                        <p class="text-zinc-500">of creators can't get<br>an agent</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-auto">
+            <p class="text-accent font-semibold text-2xl md:text-3xl">Agencies like CAA ($10bn) and WME ($25bn) cannot economically service smaller creators.</p>
+        </div>
+    </section>
+
+    <!-- SLIDE 4: Problem Amplified -->
+    <section class="slide min-h-screen flex">
+        <div class="w-full md:w-1/2 bg-accent text-white p-8 md:p-12 lg:p-16 flex flex-col">
+            <img src="logo.png" alt="Ghost" style="height: 32px; width: auto;" class="object-contain self-start invert mb-auto">
+            <div>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight mb-8">
+                    AI is accelerating an already fragmented process.
+                </h2>
+                <div class="space-y-4 text-white/80">
+                    <p>Too many emails and reach outs. Too much spam. No idea who to work with or why.</p>
+                </div>
+            </div>
+        </div>
+        <div class="hidden md:flex w-1/2 bg-zinc-900 items-center justify-center p-12">
+            <div class="text-left space-y-8">
+                <div>
+                    <p class="text-white/40 text-sm uppercase tracking-widest mb-2">For Creators</p>
+                    <p class="text-white/70 text-lg">Drowning in spam. Missing real opportunities.</p>
+                </div>
+                <div>
+                    <p class="text-white/40 text-sm uppercase tracking-widest mb-2">For Brands</p>
+                    <p class="text-white/70 text-lg">Not getting responses. Sourcing and standing out is harder than ever.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 5: Solution -->
+    <section class="slide min-h-screen flex flex-col p-8 md:p-12 lg:p-16">
+        <img src="logo.png" alt="Ghost" style="height: 32px; width: auto;" class="object-contain mb-auto self-start">
+
+        <div class="flex-1 flex flex-col justify-center">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-12">
+                Ghost is building CAA for the<br>long tail creators & brands
+            </h2>
+
+            <!-- Designer Note -->
+            <div class="bg-yellow-100 border border-yellow-300 rounded-lg p-3 mb-8 flex items-start gap-4">
+                <img src="designer-ref-dex.png" alt="Dex reference" class="w-32 h-auto rounded border border-yellow-300">
+                <div>
+                    <p class="text-yellow-800 text-sm font-medium">DESIGNER: Similar layout to Dex (see image). Ghost in center connecting Creators (left) ↔ Brands (right). Two head silhouettes facing each other with attributes inside.</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-12">
+                <!-- What Creators Want -->
+                <div>
+                    <h3 class="text-lg font-semibold text-accent mb-4">What Creators Want</h3>
+                    <ul class="space-y-3 text-zinc-600">
+                        <li>→ Brand alignment with their values</li>
+                        <li>→ Fair compensation for their work</li>
+                        <li>→ Creative freedom</li>
+                        <li>→ Long-term partnerships</li>
+                        <li>→ Brands their audience will love</li>
+                        <li>→ Consistent, audience aligned deal flow</li>
+                    </ul>
+                </div>
+
+                <!-- Ghost Data Sources (Center) -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Ghost's Multi-Agent AI System</h3>
+
+                    <p class="text-xs text-zinc-400 uppercase tracking-wide mb-2">Proprietary</p>
+                    <ul class="space-y-2 text-zinc-600 mb-6">
+                        <li>→ Gmail</li>
+                        <li>→ Previous internal deal data</li>
+                        <li>→ Brand response signals</li>
+                        <li>→ Past creator work</li>
+                        <li>→ Creator rates & preferences</li>
+                        <li>→ Brand briefs & preferences</li>
+                        <li>→ Prior brand hires & success scoring</li>
+                    </ul>
+
+                    <p class="text-xs text-zinc-400 uppercase tracking-wide mb-2">Public</p>
+                    <ul class="space-y-2 text-zinc-600">
+                        <li>→ Social profiles</li>
+                        <li>→ Brand safety signals</li>
+                        <li>→ Audience demographics</li>
+                        <li>→ Content analysis</li>
+                        <li>→ Past content performance</li>
+                    </ul>
+                </div>
+
+                <!-- What Brands Want -->
+                <div>
+                    <h3 class="text-lg font-semibold text-accent mb-4">What Brands Want</h3>
+                    <ul class="space-y-3 text-zinc-600">
+                        <li>→ Authentic creator fit</li>
+                        <li>→ Audience that matches their target</li>
+                        <li>→ Brand-safe content</li>
+                        <li>→ Predictable ROI</li>
+                        <li>→ Creators who deliver on time</li>
+                        <li>→ Strong engagement</li>
+                        <li>→ Higher response rates</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="text-zinc-500 mt-12">
+                Ghost understands the content, audience, and values that <span class="text-zinc-900 font-medium">really</span> drive great creator-brand matches.
+            </p>
+        </div>
+    </section>
+
+    <!-- SLIDE: Creator Traction -->
+    <section class="slide min-h-screen flex flex-col p-8 md:p-12 lg:p-16">
+        <div>
+            <p class="text-accent text-sm uppercase tracking-widest mb-2">Creator Traction</p>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
+                We're moving fast and <span class="text-accent">it's working</span>
+            </h2>
+            <div class="w-full h-1 bg-accent mt-4"></div>
+        </div>
+
+        <div class="flex-1 flex items-center">
+            <div class="grid md:grid-cols-2 gap-16 w-full">
+                <!-- MRR Chart -->
+                <div class="bg-white rounded-xl border border-zinc-200 p-6">
+                    <p class="text-zinc-400 text-sm mb-1">MRR</p>
+                    <p class="text-2xl font-bold mb-6">$22,268.00</p>
+
+                    <!-- Chart placeholder -->
+                    <div class="relative h-48">
+                        <div class="absolute bottom-0 left-0 right-0 flex items-end justify-between h-full">
+                            <svg viewBox="0 0 400 150" class="w-full h-full">
+                                <path d="M0 145 L100 145 L150 140 L200 130 L250 100 L300 60 L350 30 L400 10"
+                                      fill="none" stroke="#635bff" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <!-- Y-axis labels -->
+                        <div class="absolute right-0 top-0 bottom-0 flex flex-col justify-between text-xs text-zinc-400">
+                            <span>$25K</span>
+                            <span>$20K</span>
+                            <span>$15K</span>
+                            <span>$10K</span>
+                            <span>$5K</span>
+                            <span>$0</span>
+                        </div>
+                    </div>
+                    <!-- X-axis labels -->
+                    <div class="flex justify-between text-xs text-zinc-400 mt-2">
+                        <span>Apr 1, 2025</span>
+                        <span>Jul 1, 2025</span>
+                        <span>Oct 1, 2025</span>
+                        <span>Jan 1, 2026</span>
+                    </div>
+                </div>
+
+                <!-- Stats -->
+                <div class="flex flex-col justify-center space-y-8">
+                    <div>
+                        <div class="text-5xl md:text-6xl font-bold text-accent stat-number">10,000+</div>
+                        <p class="text-zinc-600 text-lg">Creator Sign Ups</p>
+                    </div>
+                    <div>
+                        <div class="text-5xl md:text-6xl font-bold text-accent stat-number">707</div>
+                        <p class="text-zinc-600 text-lg">Paying Creators</p>
+                    </div>
+                    <div>
+                        <div class="text-5xl md:text-6xl font-bold text-accent stat-number">105M</div>
+                        <p class="text-zinc-600 text-lg">Total Followers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Revenue Model -->
+        <div class="mt-auto">
+            <div class="flex items-center gap-2 mb-2">
+                <div class="w-5 h-5 bg-accent/20 rounded flex items-center justify-center">
+                    <span class="text-accent text-xs">💰</span>
+                </div>
+                <span class="font-semibold text-zinc-900">Revenue model</span>
+            </div>
+            <div class="w-16 h-0.5 bg-accent mb-2"></div>
+            <p class="text-zinc-500 text-sm">Free to start<br>AI plan upsells $25/m and $49/m SaaS</p>
+        </div>
+    </section>
+
+    <!-- SLIDE: Brand Traction -->
+    <section class="slide min-h-screen flex flex-col p-8 md:p-12 lg:p-16">
+        <div>
+            <p class="text-accent text-sm uppercase tracking-widest mb-2">Brand Traction</p>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
+                Ghost is already connecting creators to <span class="text-accent">the world's best brands</span>
+            </h2>
+            <div class="w-full h-1 bg-accent mt-4"></div>
+        </div>
+
+        <div class="flex-1 flex items-center">
+            <div class="w-full">
+                <!-- Deal Volume Chart -->
+                <div class="mb-8">
+                    <div class="flex items-center gap-2 justify-center mb-4">
+                        <div class="w-3 h-3 bg-accent rounded-full"></div>
+                        <span class="text-zinc-600">Active Deal Volume</span>
+                    </div>
+
+                    <div class="relative h-64">
+                        <!-- Y-axis -->
+                        <div class="absolute left-0 top-0 bottom-0 flex flex-col justify-between text-sm text-zinc-400 pr-4">
+                            <span>$250,000</span>
+                            <span>$200,000</span>
+                            <span>$150,000</span>
+                            <span>$100,000</span>
+                            <span>$50,000</span>
+                            <span>$0</span>
+                        </div>
+
+                        <!-- Chart area -->
+                        <div class="ml-24 h-full relative">
+                            <svg viewBox="0 0 400 200" class="w-full h-full">
+                                <path d="M50 180 L200 140 L350 40"
+                                      fill="none" stroke="#635bff" stroke-width="4" stroke-linecap="round"/>
+                                <circle cx="50" cy="180" r="6" fill="#635bff"/>
+                                <circle cx="200" cy="140" r="6" fill="#635bff"/>
+                                <circle cx="350" cy="40" r="6" fill="#635bff"/>
+                            </svg>
+
+                            <!-- X-axis labels -->
+                            <div class="flex justify-between text-sm text-zinc-400 mt-2">
+                                <span>Dec 2025</span>
+                                <span>Jan 2026</span>
+                                <span>Feb 2026</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brand Logos -->
+                <div class="flex flex-wrap items-center justify-center gap-8 mt-8">
+                    <img src="logos/perplexity.jpg" alt="Perplexity" class="h-8 object-contain">
+                    <img src="logos/lovable.png" alt="Lovable" class="h-8 object-contain">
+                    <img src="logos/quest.png" alt="Quest" class="h-8 object-contain">
+                    <img src="logos/outdoorsy.png" alt="Outdoorsy" class="h-8 object-contain">
+                    <img src="logos/esteelauder.png" alt="Estée Lauder" class="h-8 object-contain">
+                    <img src="logos/yeti.png" alt="YETI" class="h-8 object-contain">
+                </div>
+            </div>
+        </div>
+
+        <!-- Revenue Model -->
+        <div class="mt-auto flex justify-between items-end">
+            <div>
+                <div class="flex items-center gap-2 mb-2">
+                    <div class="w-5 h-5 bg-accent/20 rounded flex items-center justify-center">
+                        <span class="text-accent text-xs">💰</span>
+                    </div>
+                    <span class="font-semibold text-zinc-900">Revenue model</span>
+                </div>
+                <div class="w-16 h-0.5 bg-accent mb-2"></div>
+                <p class="text-zinc-500 text-sm">20% fee on spend</p>
+            </div>
+            <img src="logo.png" alt="Ghost" style="height: 32px; width: auto;" class="object-contain">
+        </div>
+    </section>
+
+    <!-- SLIDE 6: Our Product (blank for now) -->
+    <section class="slide min-h-screen flex flex-col p-8 md:p-12 lg:p-16 bg-zinc-900">
+        <img src="logo.png" alt="Ghost" style="height: 32px; width: auto;" class="object-contain mb-auto self-start invert">
+
+        <div class="flex-1 flex items-center justify-center">
+            <div class="text-center max-w-3xl">
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white mb-6">
+                    Our product
+                </h2>
+                <p class="text-zinc-400 text-lg mb-8">
+                    Ghost is a fully autonomous AI Agent that understands both creators and brands.
+                </p>
+                <div class="inline-flex items-center gap-3 bg-white/10 rounded-full px-6 py-3">
+                    <div class="w-2 h-2 bg-accent rounded-full"></div>
+                    <p class="text-white/80 text-sm">The trusted third party for every deal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 8: Market Opportunity -->
+    <section class="slide min-h-screen flex flex-col p-8 md:p-12 lg:p-16 overflow-hidden">
+        <img src="logo.png" alt="Ghost" style="height: 32px; width: auto;" class="object-contain self-start">
+
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mt-8">
+            It's a massive opportunity
+        </h2>
+
+        <ul class="space-y-4 mt-8 text-zinc-600 max-w-md">
+            <li class="flex items-start gap-3">
+                <span class="text-accent font-bold">→</span>
+                <span>100x more companies being created thanks to AI</span>
+            </li>
+            <li class="flex items-start gap-3">
+                <span class="text-accent font-bold">→</span>
+                <span>2-3x increase in CPMs on Google and Meta</span>
+            </li>
+            <li class="flex items-start gap-3">
+                <span class="text-accent font-bold">→</span>
+                <span>85% of companies turning to creator ads to stand out</span>
+            </li>
+        </ul>
+
+        <!-- Concentric circles positioned bottom-right -->
+        <div class="flex-1 relative">
+            <!-- TAM - Largest circle -->
+            <div class="absolute -bottom-32 -right-32 w-[700px] h-[700px] bg-accent rounded-full flex items-start justify-start pt-24 pl-24">
+                <div>
+                    <span class="text-5xl md:text-6xl font-bold text-white/90 stat-number">$480B</span>
+                    <p class="text-white/60 text-sm mt-1">Creator Economy (2027)</p>
+                </div>
+
+                <!-- SAM - Medium circle -->
+                <div class="absolute bottom-0 right-0 w-[450px] h-[450px] bg-accent rounded-full border-2 border-white/20 flex items-start justify-start pt-20 pl-16">
+                    <div>
+                        <span class="text-4xl md:text-5xl font-bold text-white/90 stat-number">$22B</span>
+                        <p class="text-white/60 text-sm mt-1">Influencer Marketing</p>
+                    </div>
+
+                    <!-- SOM - Smallest circle -->
+                    <div class="absolute bottom-0 right-0 w-[220px] h-[220px] bg-cream rounded-full border-2 border-accent/30 flex items-center justify-center">
+                        <div class="text-center pr-4 pb-4">
+                            <span class="text-3xl md:text-4xl font-bold text-accent stat-number">$7B</span>
+                            <p class="text-zinc-500 text-sm mt-1">Creator Platforms</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 9: Agency Fees Dwarf Creator Tech -->
+    <section class="slide min-h-screen flex flex-col p-8 md:p-12 lg:p-16">
+        <img src="logo.png" alt="Ghost" style="height: 32px; width: auto;" class="object-contain self-start">
+
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mt-8 mb-2">
+            Agencies dominate deal flow.<br>Tech hasn't captured it.
+        </h2>
+        <p class="text-zinc-500 mb-8">$33B flows through influencer marketing annually. Here's where it goes:</p>
+
+        <div class="flex-1 flex items-center justify-center">
+            <div class="flex items-end justify-center gap-16">
+                <!-- Marketplaces: Small -->
+                <div class="text-center">
+                    <div class="bg-accent/10 border-2 border-accent/30 rounded-2xl p-8 mb-4" style="width: 200px; height: 160px;">
+                        <p class="text-accent text-sm uppercase tracking-wide mb-2">Marketplaces</p>
+                        <div class="text-4xl md:text-5xl font-bold text-accent stat-number">~$1B</div>
+                    </div>
+                    <div class="space-y-1 text-sm text-zinc-500">
+                        <p>TRIBE <span class="text-zinc-400">~$100M GMV</span></p>
+                        <p>Insense <span class="text-zinc-400">~$35M GMV</span></p>
+                        <p>Collabstr, Billo, others</p>
+                    </div>
+                </div>
+
+                <!-- Agencies: BIG -->
+                <div class="text-center">
+                    <div class="bg-zinc-900 rounded-2xl p-10 mb-4 flex flex-col items-center justify-center" style="width: 320px; height: 380px;">
+                        <p class="text-zinc-400 text-sm uppercase tracking-wide mb-4">Agencies</p>
+                        <div class="text-6xl md:text-7xl font-bold text-white stat-number">$13B</div>
+                    </div>
+                    <div class="space-y-1 text-sm text-zinc-500">
+                        <p>CAA, UTA, WME</p>
+                        <p>Viral Nation, Whalar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-6 p-4 bg-accent/5 rounded-lg border border-accent/20">
+            <p class="text-zinc-700"><span class="font-semibold text-accent">The opportunity:</span> 97% of deal flow has no tech layer. Ghost captures this by representing creators like an agency, powered by AI.</p>
+        </div>
+
+        <p class="text-zinc-400 text-xs mt-4">
+            Sources: Statista 2025, Influencer Marketing Hub, TRIBE/Insense company data, Crunchbase
+        </p>
+    </section>
+
+    <!-- SLIDE 10: Why Different -->
+    <section class="slide min-h-screen flex flex-col p-8 md:p-12 lg:p-16">
+        <img src="logo.png" alt="Ghost" style="height: 32px; width: auto;" class="object-contain mb-auto self-start">
+
+        <div class="flex-1 flex items-center">
+            <div class="w-full">
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-12">
+                    Why is Ghost different?
+                </h2>
+
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="border-b-2 border-zinc-200">
+                                <th class="pb-4 pr-8 text-left font-normal text-zinc-400"></th>
+                                <th class="pb-4 px-4 text-center">
+                                    <img src="logo.png" alt="Ghost" style="height: 24px; width: auto;" class="object-contain mx-auto">
+                                </th>
+                                <th class="pb-4 px-4 text-center font-normal text-zinc-400 text-sm">Big Agencies<br><span class="text-xs">CAA, UTA</span></th>
+                                <th class="pb-4 px-4 text-center font-normal text-zinc-400 text-sm">Platforms<br><span class="text-xs">Grin, AspireIQ</span></th>
+                                <th class="pb-4 px-4 text-center font-normal text-zinc-400 text-sm">Marketplaces<br><span class="text-xs">Fiverr, Upwork</span></th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm">
+                            <tr class="border-b border-zinc-100">
+                                <td class="py-4 pr-8 text-zinc-600">Represents creators</td>
+                                <td class="py-4 px-4 text-center"><div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center mx-auto"><svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg></div></td>
+                                <td class="py-4 px-4 text-center"><div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center mx-auto"><svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg></div></td>
+                                <td class="py-4 px-4 text-center"><div class="w-6 h-6 bg-zinc-200 rounded-full flex items-center justify-center mx-auto"><svg class="w-4 h-4 text-zinc-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg></div></td>
+                                <td class="py-4 px-4 text-center"><div class="w-6 h-6 bg-zinc-200 rounded-full flex items-center justify-center mx-auto"><svg class="w-4 h-4 text-zinc-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg></div></td>
+                            </tr>
+                            <tr class="border-b border-zinc-100">
+                                <td class="py-4 pr-8 text-zinc-600">Works with micro-creators</td>
+                                <td class="py-4 px-4 text-center"><div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center mx-auto"><svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg></div></td>
+                                <td class="py-4 px-4 text-center"><div class="w-6 h-6 bg-zinc-200 rounded-full flex items-center justify-center mx-auto"><svg class="w-4 h-4 text-zinc-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg></div></td>
+                                <td class="py-4 px-4 text-center"><div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center mx-auto"><svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg></div></td>
+                                <td class="py-4 px-4 text-center"><div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center mx-auto"><svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg></div></td>
+                            </tr>
+                            <tr class="border-b border-zinc-100">
+                                <td class="py-4 pr-8 text-zinc-600">Negotiates deals</td>
+                                <td class="py-4 px-4 text-center"><div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center mx-auto"><svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg></div></td>
+                                <td class="py-4 px-4 text-center"><div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center mx-auto"><svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg></div></td>
+                                <td class="py-4 px-4 text-center"><div class="w-6 h-6 bg-zinc-200 rounded-full flex items-center justify-center mx-auto"><svg class="w-4 h-4 text-zinc-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg></div></td>
+                                <td class="py-4 px-4 text-center"><div class="w-6 h-6 bg-zinc-200 rounded-full flex items-center justify-center mx-auto"><svg class="w-4 h-4 text-zinc-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg></div></td>
+                            </tr>
+                            <tr class="border-b border-zinc-100">
+                                <td class="py-4 pr-8 text-zinc-600">AI-powered matching</td>
+                                <td class="py-4 px-4 text-center"><div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center mx-auto"><svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg></div></td>
+                                <td class="py-4 px-4 text-center"><div class="w-6 h-6 bg-zinc-200 rounded-full flex items-center justify-center mx-auto"><svg class="w-4 h-4 text-zinc-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg></div></td>
+                                <td class="py-4 px-4 text-center"><div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center mx-auto"><svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg></div></td>
+                                <td class="py-4 px-4 text-center"><div class="w-6 h-6 bg-zinc-200 rounded-full flex items-center justify-center mx-auto"><svg class="w-4 h-4 text-zinc-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg></div></td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 pr-8 text-zinc-600">No minimum deal size</td>
+                                <td class="py-4 px-4 text-center"><div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center mx-auto"><svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg></div></td>
+                                <td class="py-4 px-4 text-center"><div class="w-6 h-6 bg-zinc-200 rounded-full flex items-center justify-center mx-auto"><svg class="w-4 h-4 text-zinc-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg></div></td>
+                                <td class="py-4 px-4 text-center"><div class="w-6 h-6 bg-zinc-200 rounded-full flex items-center justify-center mx-auto"><svg class="w-4 h-4 text-zinc-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg></div></td>
+                                <td class="py-4 px-4 text-center"><div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center mx-auto"><svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg></div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE: Team -->
+    <section class="slide min-h-screen flex flex-col p-8 md:p-12 lg:p-16">
+        <img src="logo.png" alt="Ghost" style="height: 32px; width: auto;" class="object-contain mb-auto self-start">
+
+        <div class="flex-1 flex items-center">
+            <div class="w-full">
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+                    Our unfair advantage
+                </h2>
+                <p class="text-zinc-500 mb-12">
+                    Growth Marketing, Talent Agent, and AI Experience.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <!-- R.J. Napolitano -->
+                    <div>
+                        <div class="w-20 h-20 bg-accent rounded-full flex items-center justify-center text-white text-xl font-bold mb-4">RJ</div>
+                        <h3 class="text-xl font-bold">R.J. Napolitano</h3>
+                        <p class="text-zinc-400 text-sm tracking-widest mb-4">CEO</p>
+                        <ul class="text-zinc-600 text-sm space-y-2">
+                            <li>Prior founder with over $2M ARR & $15M+ raised</li>
+                            <li>Talent agent for @anna_diblosi doing deals with CVS, P&G, & more</li>
+                            <li>Head of Growth at Sequoia backed Series A startup, grew new product line from $0-100M+ GMV</li>
+                            <li>Ultra marathon runner</li>
+                        </ul>
+                        <div class="flex items-center gap-3 mt-4 text-xs text-zinc-400">
+                            <span>Goldman Sachs</span>
+                            <span>Open</span>
+                            <span>Zebra</span>
+                        </div>
+                    </div>
+
+                    <!-- Gui Conti -->
+                    <div>
+                        <div class="w-20 h-20 bg-accent rounded-full flex items-center justify-center text-white text-xl font-bold mb-4">G</div>
+                        <h3 class="text-xl font-bold">Gui Conti</h3>
+                        <p class="text-zinc-400 text-sm tracking-widest mb-4">CTO</p>
+                        <ul class="text-zinc-600 text-sm space-y-2">
+                            <li>Masters in Artificial Intelligence from the #1 university in Brazil</li>
+                            <li>Staff Engineer at Experian ($42B company)</li>
+                            <li>Director of Engineering at Fellow.ai from seed to $10M+ ARR (Raised $30M, Craft Ventures backed)</li>
+                            <li>High ranking of 67 out of 15,000,000 in World of Warcraft</li>
+                        </ul>
+                        <div class="flex items-center gap-3 mt-4 text-xs text-zinc-400">
+                            <span>Fellow</span>
+                            <span>Itau</span>
+                            <span>Experian</span>
+                        </div>
+                    </div>
+
+                    <!-- Dilawer Hussain -->
+                    <div>
+                        <div class="w-20 h-20 bg-accent rounded-full flex items-center justify-center text-white text-xl font-bold mb-4">D</div>
+                        <h3 class="text-xl font-bold">Dilawer Hussain</h3>
+                        <p class="text-zinc-400 text-sm tracking-widest mb-4">CPO</p>
+                        <ul class="text-zinc-600 text-sm space-y-2">
+                            <li>Fellow.ai engineer from seed to Series A (Craft Ventures backed)</li>
+                            <li>Owned enterprise AI integrations for HubSpot & Salesforce</li>
+                            <li>Solo-built and shipped React Native fitness apps for fun</li>
+                            <li>Mentored by a design leader at Linear</li>
+                            <li>Powerlifter & bodybuilder in his free time</li>
+                        </ul>
+                        <div class="flex items-center gap-3 mt-4 text-xs text-zinc-400">
+                            <span>Fellow</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 12: CTA -->
+    <section class="slide min-h-screen flex flex-col">
+        <div class="p-8 md:p-12 lg:p-16">
+            <img src="logo.png" alt="Ghost" style="height: 32px; width: auto;" class="object-contain self-start">
+        </div>
+
+        <div class="flex-1 flex">
+            <div class="w-full md:w-1/2 p-8 md:p-12 lg:p-16 flex flex-col justify-center">
+                <p class="text-zinc-400 text-sm uppercase tracking-widest mb-2">Raising</p>
+                <div class="text-6xl md:text-7xl font-bold text-accent stat-number mb-6">$1.5M</div>
+                <div class="space-y-2 text-zinc-600 mb-10">
+                    <p>→ Negotiation & close infrastructure</p>
+                    <p>→ Scale roster to 50K creators</p>
+                    <p>→ Capture brand demand now</p>
+                </div>
+                <div class="pt-6 border-t border-zinc-200">
+                    <p class="font-semibold text-lg">R.J. Napolitano</p>
+                    <p class="text-accent">CEO</p>
+                </div>
+            </div>
+            <div class="hidden md:flex w-1/2 bg-accent items-center justify-center p-16">
+                <div class="text-center text-white">
+                    <h3 class="text-4xl font-bold mb-8">Get in touch<br>to meet Ghost.</h3>
+                    <div class="space-y-2">
+                        <p class="text-xl">rj@onghost.com</p>
+                        <p class="text-white/70">(267) 664-6640</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('keydown', (e) => {
+            const slides = document.querySelectorAll('.slide');
+            const currentScroll = window.scrollY;
+            const windowHeight = window.innerHeight;
+            const currentSlide = Math.round(currentScroll / windowHeight);
+            if (e.key === 'ArrowDown' || e.key === ' ' || e.key === 'PageDown') {
+                e.preventDefault();
+                if (currentSlide < slides.length - 1) slides[currentSlide + 1].scrollIntoView({ behavior: 'smooth' });
+            } else if (e.key === 'ArrowUp' || e.key === 'PageUp') {
+                e.preventDefault();
+                if (currentSlide > 0) slides[currentSlide - 1].scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+        let touchStartY = 0;
+        document.addEventListener('touchstart', (e) => { touchStartY = e.touches[0].clientY; });
+        document.addEventListener('touchend', (e) => {
+            const diff = touchStartY - e.changedTouches[0].clientY;
+            if (Math.abs(diff) > 50) {
+                const slides = document.querySelectorAll('.slide');
+                const currentSlide = Math.round(window.scrollY / window.innerHeight);
+                if (diff > 0 && currentSlide < slides.length - 1) slides[currentSlide + 1].scrollIntoView({ behavior: 'smooth' });
+                else if (diff < 0 && currentSlide > 0) slides[currentSlide - 1].scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    </script>
+</body>
+</html>
